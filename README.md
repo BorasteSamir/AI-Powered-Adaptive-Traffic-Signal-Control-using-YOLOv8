@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 🚦 Smart Traffic Management System
 
 <p align="center">
