@@ -1,0 +1,28 @@
+# ─────────────────────────────────────────────────────────────────────────────
+#  Smart Traffic Management System — Python Dependencies
+#  Install: pip install -r requirements.txt
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ── Core ML / Detection ───────────────────────────────────────────────────────
+ultralytics>=8.4.0          # YOLOv8 inference engine
+torch>=2.0.0                # PyTorch backend (CPU or CUDA)
+torchvision>=0.15.0         # Image transforms used by ultralytics internally
+
+# ── Dashboard & UI ────────────────────────────────────────────────────────────
+streamlit>=1.32.0           # Web dashboard framework
+
+# ── Computer Vision ───────────────────────────────────────────────────────────
+opencv-python>=4.8.0        # Frame reading, annotation, VideoWriter
+
+# ── Data & Numerics ───────────────────────────────────────────────────────────
+numpy>=1.24.0               # Array operations on frames and detections
+pandas>=2.0.0               # DataFrame for rolling chart history
+
+# ── Image Handling ────────────────────────────────────────────────────────────
+Pillow>=10.0.0              # Image I/O used by ultralytics and Streamlit
+
+# ── Utilities (used internally by ultralytics / streamlit) ───────────────────
+PyYAML>=6.0                 # Model config parsing by ultralytics
+requests>=2.28.0            # Model download fallback in ultralytics
+tqdm>=4.64.0                # Progress bars during model load
+psutil>=5.9.0               # System resource monitoring (ultralytics)

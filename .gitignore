@@ -1,0 +1,64 @@
+# ── Virtual Environments ──────────────────────────────────────────────────────
+venv/
+mv_dl/
+.venv/
+env/
+ENV/
+
+# ── Model Weights (too large for GitHub — use Git LFS or share separately) ────
+*.pt
+*.pth
+*.onnx
+*.engine
+*.tflite
+*.pb
+
+# ── Python Cache ──────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# ── Jupyter Notebooks (training code — not part of the app) ──────────────────
+*.ipynb
+.ipynb_checkpoints/
+
+# ── Streamlit Cache ───────────────────────────────────────────────────────────
+.streamlit/
+
+# ── Ultralytics / YOLO Run Outputs ───────────────────────────────────────────
+runs/
+ultralytics/
+
+# ── Processed / Temp Video Files ─────────────────────────────────────────────
+*_processed.mp4
+*_processed.avi
+*.tmp
+tmp_*.mp4
+tmp_*.avi
+tmp_*.mov
+
+# ── OS Files ──────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE / Editor ──────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Environment Variables ─────────────────────────────────────────────────────
+.env
+.env.local
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── Distribution / Build ──────────────────────────────────────────────────────
+dist/
+build/
+*.egg-info/
