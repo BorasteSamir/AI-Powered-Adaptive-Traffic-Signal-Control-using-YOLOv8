@@ -1,3 +1,4 @@
+
 # Smart Traffic Management System — Solution Document
 
 > **Project:** AI-Powered Adaptive Traffic Signal Control using YOLOv8  
