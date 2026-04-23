@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2fe9df0a77a6cf97ab886fafb0e95231b49a13ae
 # 🚦 Smart Traffic Management System
 
 > **Project:** AI-Powered Adaptive Traffic Signal Control using YOLOv8  
@@ -39,14 +43,14 @@
 
 ---
 
-## 🎬 Demo
+##  Demo
 
 ```
-📸 Upload one traffic image per signal → YOLOv8 detects vehicles instantly
-🚦 Signal panel shows live countdown timers for all 4 signals
-🤖 AUTO mode: green time adapts to vehicle count (7 vehicles = 14s, 15 = 30s)
-🕹️ MANUAL mode: operator picks which signal is GREEN
-⏭️ Force Next: skip current signal at any time
+ Upload one traffic image per signal → YOLOv8 detects vehicles instantly
+ Signal panel shows live countdown timers for all 4 signals
+ AUTO mode: green time adapts to vehicle count (7 vehicles = 14s, 15 = 30s)
+ MANUAL mode: operator picks which signal is GREEN
+ Force Next: skip current signal at any time
 ```
 
 > **Dashboard preview:**
@@ -64,28 +68,28 @@
 
 ---
 
-## ✨ Features
+##  Features
 
 | Feature | Description |
 |---|---|
-| 🔍 **YOLOv8 Detection** | Detects cars, buses, trucks, motorcycles, autorickshaws |
-| ⚖️ **Weighted Scoring** | Heavy vehicles (bus/truck) count 2.5× more than cars |
-| ⏱️ **Adaptive Green Time** | `green = vehicles × 2.0s`, capped at 2 minutes |
-| 📸 **Per-Signal Images** | Upload one image per signal — timing adjusts instantly |
-| 🎬 **Video / Webcam** | Optional live feed with real-time detection overlay |
-| 🔴🟡🟢 **Realistic Phases** | GREEN → YELLOW (3s) → ALL_RED (1s) → next GREEN |
-| ⏳ **Live Countdown** | Draining progress bar on every signal card, updates every second |
-| 🤖 **AUTO Mode** | Timer-driven round-robin with coordination |
-| 🕹️ **MANUAL Mode** | Operator selects any signal to turn GREEN |
-| ⏭️ **Force Next** | Skip current signal instantly (both modes) |
-| 🌊 **Green Wave** | 2s offset so vehicle platoons hit the next signal on green |
-| ⏭️ **Skip Empty** | Signals with 0 vehicles are skipped to reduce waiting |
-| 🛡️ **Starvation Guard** | No signal waits more than 60s regardless of traffic |
-| 📊 **Live Dashboard** | 6 metric cards, rolling history chart, analytics panel |
+|  **YOLOv8 Detection** | Detects cars, buses, trucks, motorcycles, autorickshaws |
+|  **Weighted Scoring** | Heavy vehicles (bus/truck) count 2.5× more than cars |
+|  **Adaptive Green Time** | `green = vehicles × 2.0s`, capped at 2 minutes |
+|  **Per-Signal Images** | Upload one image per signal — timing adjusts instantly |
+|  **Video / Webcam** | Optional live feed with real-time detection overlay |
+|  **Realistic Phases** | GREEN → YELLOW (3s) → ALL_RED (1s) → next GREEN |
+|  **Live Countdown** | Draining progress bar on every signal card, updates every second |
+|  **AUTO Mode** | Timer-driven round-robin with coordination |
+|  **MANUAL Mode** | Operator selects any signal to turn GREEN |
+|  **Force Next** | Skip current signal instantly (both modes) |
+|  **Green Wave** | 2s offset so vehicle platoons hit the next signal on green |
+|  **Skip Empty** | Signals with 0 vehicles are skipped to reduce waiting |
+|  **Starvation Guard** | No signal waits more than 60s regardless of traffic |
+|  **Live Dashboard** | 6 metric cards, rolling history chart, analytics panel |
 
 ---
 
-## 🧠 How It Works
+##  How It Works
 
 ```
 Step 1 — Upload Images
@@ -117,7 +121,7 @@ Step 5 — Live Dashboard
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 traffic_system/
@@ -131,7 +135,7 @@ traffic_system/
 ├── dashboard.py            ← OpenCV annotations + Streamlit UI components
 ├── per_signal_input.py     ← Per-signal image upload panel
 │
-├── best.pt                 ← ⚠️ Trained model weights (NOT in repo — see below)
+├── best.pt                 ←  Trained model weights (NOT in repo — see below)
 ├── requirements.txt        ← Python dependencies
 ├── README.md               ← This file
 ├── solution.md             ← Detailed technical solution document
@@ -140,7 +144,7 @@ traffic_system/
 
 ---
 
-## 🔧 Prerequisites
+##  Prerequisites
 
 - **Python 3.10 or higher** (uses modern type hints)
 - **pip** package manager
@@ -151,7 +155,7 @@ traffic_system/
 
 ---
 
-## 🚀 Installation
+##  Installation
 
 ### Step 1 — Clone the repository
 
@@ -189,7 +193,7 @@ This installs:
 
 ---
 
-## 🤖 Getting the Model
+##  Getting the Model
 
 The trained `best.pt` file (~50MB) is **not included in this repository** due to GitHub's file size limits.
 
@@ -231,7 +235,7 @@ git lfs pull
 
 ---
 
-## ▶️ Running the App
+##  Running the App
 
 Make sure you are inside the `traffic_system` folder with your virtual environment activated:
 
@@ -259,18 +263,18 @@ streamlit run app.py --server.address 0.0.0.0
 
 ---
 
-## 📖 Usage Guide
+##  Usage Guide
 
 ### Mode 1 — Image Analysis (Recommended for first run)
 
 1. Open the app at `http://localhost:8501`
-2. In the **"📸 Traffic Image Analysis"** section, upload one traffic image per signal (S1–S4)
+2. In the **" Traffic Image Analysis"** section, upload one traffic image per signal (S1–S4)
 3. YOLOv8 detects vehicles in each image immediately — you'll see bounding boxes and green time
 4. The **Signal Control Panel** starts the countdown automatically
 5. Watch the live draining progress bar on the active GREEN signal
-6. Use **🤖 Auto Mode** to let the system cycle automatically
-7. Use **🕹️ Manual Mode** to pick which signal is GREEN yourself
-8. Click **⏭️ Force Next Signal** to skip the current signal at any time
+6. Use ** Auto Mode** to let the system cycle automatically
+7. Use ** Manual Mode** to pick which signal is GREEN yourself
+8. Click ** Force Next Signal** to skip the current signal at any time
 
 ### Mode 2 — Live Video Feed
 
@@ -294,13 +298,13 @@ Use the **Confidence threshold** slider in the sidebar:
 
 | Mode | When to use |
 |---|---|
-| 🤖 **AUTO** | Normal operation — system manages timing automatically |
-| 🕹️ **MANUAL** | Emergency override, testing, or when you need to hold a specific signal |
-| ⏭️ **Force Next** | Quickly advance past a signal that has been green too long |
+|  **AUTO** | Normal operation — system manages timing automatically |
+|  **MANUAL** | Emergency override, testing, or when you need to hold a specific signal |
+|  **Force Next** | Quickly advance past a signal that has been green too long |
 
 ---
 
-## ⏱️ Signal Timing Logic
+##  Signal Timing Logic
 
 ### Green Time Formula
 
@@ -345,7 +349,7 @@ green_time = max(8s, min(120s, weighted_score × 2.0))
 
 ---
 
-## ⚙️ Configuration
+##  Configuration
 
 All tunable parameters are in `config.py`:
 
@@ -394,7 +398,7 @@ To change any value, edit `config.py` — no other file needs to be touched.
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feature/your-feature`
