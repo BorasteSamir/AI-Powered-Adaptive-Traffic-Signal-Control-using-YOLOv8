@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 
->>>>>>> 2fe9df0a77a6cf97ab886fafb0e95231b49a13ae
 # 🚦 Smart Traffic Management System
 
 > **Project:** AI-Powered Adaptive Traffic Signal Control using YOLOv8  
